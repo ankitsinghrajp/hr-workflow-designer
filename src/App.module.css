@@ -1,0 +1,39 @@
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr 300px;
+  grid-template-rows: 50px 1fr 36px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Topbar spans all 3 columns */
+.app > header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+/* Sidebar */
+.app > aside:first-of-type {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Canvas */
+.canvasArea {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Right panel */
+.app > aside:last-of-type {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Status bar */
+.app > footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}

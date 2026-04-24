@@ -1,0 +1,68 @@
+:root {
+  --bg: #0b0d14;
+  --bg2: #10131e;
+  --bg3: #161b2c;
+  --bg4: #1d2438;
+  --border: #232a40;
+  --border2: #2e3a58;
+  --text: #dce3f5;
+  --text2: #7e8fad;
+  --text3: #475370;
+  --accent: #4f7ef7;
+  --accent2: #3560d4;
+  --success: #20c55b;
+  --warn: #f5a623;
+  --danger: #ef4455;
+  --purple: #a07cf5;
+  --teal: #2dcfbe;
+  --node-start: #22c55e;
+  --node-task: #4f8ef7;
+  --node-approval: #a78bfa;
+  --node-automated: #f59e0b;
+  --node-end: #ef4444;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Syne', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root { height: 100vh; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+/* React Flow overrides */
+.react-flow__background { background: var(--bg) !important; }
+.react-flow__controls {
+  background: var(--bg2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+.react-flow__controls-button {
+  background: var(--bg2) !important;
+  border-bottom: 1px solid var(--border) !important;
+  fill: var(--text2) !important;
+}
+.react-flow__controls-button:hover { background: var(--bg3) !important; }
+.react-flow__minimap {
+  background: var(--bg2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+}
+.react-flow__edge-path { stroke: var(--border2) !important; stroke-width: 2 !important; }
+.react-flow__edge.selected .react-flow__edge-path { stroke: var(--accent) !important; }
+.react-flow__handle {
+  background: var(--accent) !important;
+  border-color: var(--bg) !important;
+  width: 8px !important;
+  height: 8px !important;
+}

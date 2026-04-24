@@ -1,0 +1,28 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  height: 36px;
+  font-size: 11px;
+  color: var(--text3);
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.stat strong { color: var(--text2); font-weight: 600; }
+.sep { opacity: 0.4; }
+
+.selected { color: var(--accent); font-weight: 500; }
+.none { color: var(--text3); }
+
+.brand {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--text3);
+  opacity: 0.6;
+  font-family: 'Syne', system-ui, sans-serif;
+  letter-spacing: 0.3px;
+}
