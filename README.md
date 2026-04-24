@@ -1,4 +1,4 @@
-# HR Workflow Designer — Tredence Studio
+# HR Workflow Designer 
 
 A visual workflow builder for HR processes built with React and React Flow. I made this as part of the Tredence Studio internship case study.
 
